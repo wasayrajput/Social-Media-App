@@ -1,0 +1,82 @@
+.card {
+  background-color: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 12px rgba(1, 62, 55, 0.08);
+}
+
+.title {
+  color: var(--brand-green);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--brand-green-light);
+  font-size: 0.95rem;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.label {
+  color: var(--brand-green);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.input {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1.5px solid var(--border-color);
+  background-color: #fff;
+  color: var(--brand-green);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: var(--brand-green);
+}
+
+.button {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: var(--brand-green);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: var(--brand-green-light);
+}
+
+.footerText {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--brand-green);
+}
+
+.link {
+  color: var(--brand-green);
+  font-weight: bold;
+  text-decoration: underline;
+}

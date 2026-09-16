@@ -1,0 +1,164 @@
+.card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 12px rgba(1, 62, 55, 0.05);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--brand-green);
+  color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.authorName {
+  font-weight: bold;
+  color: var(--brand-green);
+  font-size: 1rem;
+}
+
+.time {
+  font-size: 0.8rem;
+  color: var(--brand-green-light);
+  opacity: 0.8;
+}
+
+.content {
+  color: var(--brand-green);
+  font-size: 0.98rem;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+
+/* Previous styles ke niche add karein */
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid var(--border-color);
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: var(--brand-green);
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.actionBtn:hover {
+  background-color: var(--bg-primary);
+}
+
+.liked {
+  color: #e63946; /* Red Heart on Like */
+}
+
+.authorInfo {
+  flex: 1;
+}
+
+.authorControls {
+  display: flex;
+  gap: 4px;
+}
+
+.iconBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.deleteIconBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e63946;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.inlineEditContainer {
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.inlineTextarea {
+  width: 100%;
+  min-height: 70px;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--brand-green);
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.inlineEditActions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 0.4rem;
+}
+
+.inlineCancelBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.inlineSaveBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--brand-green);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.postImage {
+  width: 100%;
+  height: auto;
+  max-height: 550px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-top: 0.8rem;
+  display: block;
+}

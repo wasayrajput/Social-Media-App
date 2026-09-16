@@ -1,0 +1,58 @@
+.card {
+  background-color: var(--card-bg, #ffffff);
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 12px;
+  padding: 0.8rem;
+  box-shadow: 0 4px 12px rgba(1, 62, 55, 0.05);
+}
+
+.title {
+  color: var(--brand-green, #013e37);
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.7rem 0.9rem;
+  color: var(--brand-green, #013e37);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.navLink:hover {
+  background-color: var(--bg-primary, #fbf7ed);
+}
+
+.active {
+  background-color: var(--brand-green, #013e37);
+  color: #ffffff;
+}
+
+.active:hover {
+  background-color: var(--brand-green, #013e37);
+  opacity: 0.9;
+}
+
+.logoutBtn {
+  background: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  color: #e63946;
+  text-align: left;
+  font-family: inherit;
+}

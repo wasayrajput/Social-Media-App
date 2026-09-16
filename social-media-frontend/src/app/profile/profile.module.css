@@ -1,0 +1,218 @@
+/* src/app/profile/profile.module.css */
+.container {
+  max-width: 880px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: var(--card-bg, #ffffff);
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(1, 62, 55, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.cover {
+  height: 160px;
+  background: linear-gradient(135deg, var(--brand-green, #013e37) 0%, #02685c 100%);
+}
+
+.profileHeader {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.avatarWrapper {
+  margin-top: -50px;
+  position: relative;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--brand-green, #013e37);
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #ffffff;
+}
+
+.editBtn {
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--brand-green, #013e37);
+  background: transparent;
+  color: var(--brand-green, #013e37);
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.editBtn:hover {
+  background-color: var(--brand-green, #013e37);
+  color: #ffffff;
+}
+
+.details {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  color: var(--brand-green, #013e37);
+  margin-bottom: 0.2rem;
+}
+
+.email {
+  color: var(--brand-green-light, #558b82);
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.bio {
+  color: var(--brand-green, #013e37);
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  border-top: 1px solid var(--border-color, #e2e8f0);
+  padding-top: 1rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.statNumber {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--brand-green, #013e37);
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: var(--brand-green-light, #558b82);
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  color: var(--brand-green, #013e37);
+  margin-bottom: 1rem;
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.loaderText {
+  color: #0d47a1;
+  font-weight: bold;
+}
+
+.emptyPosts {
+  color: #666;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Edit Profile Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 1.8rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.modalTitle {
+  color: var(--brand-green);
+  margin-bottom: 1.2rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.modalActions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.saveBtn {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--brand-green);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  padding: 0.6rem 1.2rem;
+  background-color: #eee;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}

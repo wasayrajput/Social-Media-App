@@ -1,0 +1,62 @@
+.mainLayout {
+  display: grid;
+  grid-template-columns: 260px 1fr 280px;
+  gap: 1.5rem;
+  max-width: 1280px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  align-items: start;
+}
+
+.leftSidebar,
+.rightSidebar {
+  position: sticky;
+  top: 80px;
+}
+
+.sidebarCard {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 12px rgba(1, 62, 55, 0.05);
+}
+
+/* Mobile Screens (900px se kam) par sidebars hide kar dein */
+@media (max-width: 900px) {
+  .mainLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .leftSidebar,
+  .rightSidebar {
+    display: none;
+  }
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.loaderText {
+  color: #0d47a1;
+  font-weight: bold;
+}
+
+.emptyStateCard {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.emptyStateText {
+  color: #666;
+  margin: 0;
+}
+
+.trendingHashtags {
+  margin-top: 0.8rem;
+  color: var(--brand-green-light);
+}

@@ -1,0 +1,21 @@
+/* src/app/globals.css */
+:root {
+  --bg-primary: #ffefb3;       /* Warm Butter Background */
+  --text-primary: #013e37;     /* Deep Forest Green Text */
+  --brand-green: #013e37;      /* Primary Accent Color */
+  --brand-green-light: #0d5c52;/* Secondary Green for Hover */
+  --card-bg: #ffffff;          /* White Cards for High Contrast */
+  --border-color: #e2d39b;     /* Muted Butter Border */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
